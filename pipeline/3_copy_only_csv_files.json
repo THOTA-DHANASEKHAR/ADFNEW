@@ -1,5 +1,5 @@
 {
-	"name": "2_pass_dynamic_fillname",
+	"name": "3_copy_only_csv_files",
 	"properties": {
 		"activities": [
 			{
