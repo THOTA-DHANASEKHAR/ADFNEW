@@ -1,5 +1,5 @@
 {
-	"name": "3_ADLS_DS_DFN_sink",
+	"name": "3_ADLS_DS_OCSV_sink",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "dynamicfilename",
+				"folderPath": "csv",
 				"fileSystem": "sink"
 			},
 			"columnDelimiter": ",",

@@ -1,5 +1,5 @@
 {
-	"name": "3_ADLS_DS_DFN_source_meta",
+	"name": "3_ADLS_DS_OCSV_source_meta",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
