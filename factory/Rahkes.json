@@ -1,0 +1,9 @@
+{
+	"name": "Rahkes",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c4fec8c5-9df8-4214-876e-13cbe7e8ec5a",
+		"tenantId": "7b1c5f44-3691-4f73-ba23-5c47aff2b82f"
+	}
+}
