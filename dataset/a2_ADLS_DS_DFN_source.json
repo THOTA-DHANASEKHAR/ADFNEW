@@ -1,12 +1,12 @@
 {
-	"name": "DelimitedText1",
+	"name": "a2_ADLS_DS_DFN_source",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"dsr": {
+			"Filename": {
 				"type": "String"
 			}
 		},
@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().dsr",
+					"value": "@dataset().Filename",
 					"type": "Expression"
 				},
 				"fileSystem": "sorce"

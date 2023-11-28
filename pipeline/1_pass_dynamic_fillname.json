@@ -97,10 +97,10 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DelimitedText1",
+									"referenceName": "a2_ADLS_DS_DFN_source",
 									"type": "DatasetReference",
 									"parameters": {
-										"dsr": {
+										"Filename": {
 											"value": "@item().name",
 											"type": "Expression"
 										}
