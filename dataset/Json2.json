@@ -1,0 +1,88 @@
+{
+	"name": "Json2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "output_withMultipleJson.json",
+				"fileSystem": "sorce"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"values": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "string"
+							},
+							"Parent": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"familyName": {
+											"type": "string"
+										},
+										"givenName": {
+											"type": "string"
+										}
+									}
+								}
+							},
+							"Children": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"givenName": {
+											"type": "string"
+										},
+										"gender": {
+											"type": "string"
+										},
+										"familyName": {
+											"type": "string"
+										},
+										"grade": {
+											"type": "string"
+										}
+									}
+								}
+							},
+							"creationDate": {
+								"type": "string"
+							},
+							"isRegistered": {
+								"type": "string"
+							},
+							"Address": {
+								"type": "object",
+								"properties": {
+									"city": {
+										"type": "string"
+									},
+									"state": {
+										"type": "string"
+									},
+									"county": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
