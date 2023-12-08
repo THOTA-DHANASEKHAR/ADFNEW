@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "3_copy_only_csv_files",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/sorce/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/66aa7454-d902-428c-8528-765e9306e8e8/resourceGroups/RG_dhana/providers/Microsoft.Storage/storageAccounts/feelitsupplychain",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
